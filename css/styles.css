@@ -1,3 +1,4 @@
+/* #region general styles */
 a {
   text-decoration: none;
 }
@@ -29,20 +30,29 @@ body {
   padding: 0 16px;
 }
 
-.header {
+button {
+  cursor: pointer;
 }
+/* #endregion general styles */
+
+/* #region Header */
+.header-container {
+  display: flex;
+  align-items: center;
+}
+
 .header-logo {
   margin-right: auto;
 }
 .header-nav {
   margin-right: 30px;
 }
+
 .header-nav-list {
   display: flex;
   gap: 28px;
 }
-.header-nav-list-item {
-}
+
 .header-nav-list-item-link {
   font-size: 14px;
   color: #2c2c2c;
@@ -65,31 +75,33 @@ body {
   font-size: 13px;
   line-height: 1.5;
   border: none;
-  cursor: pointer;
   background: #bbf330;
 }
-.header-container {
-  display: flex;
-  align-items: center;
+
+.main-btn:hover,
+:focus {
+  background: #ffe450;
 }
 
+/* #endregion Header */
+
+/* #region Section1 Hero */
 .section-hero {
   padding-top: 16px;
   padding-bottom: 46px;
 }
-.container {
-}
+
 .section-hero-title {
   font-size: 48px;
   line-height: 1.2;
   margin-bottom: 28px;
 }
+
 .section-hero-text {
   line-height: 1.5;
   margin-bottom: 40px;
 }
-.main-btn {
-}
+
 .hero-container {
   display: flex;
   align-items: center;
@@ -98,12 +110,15 @@ body {
 .hero-wrapper {
   max-width: 511px;
 }
+/* #endregion Section1 Hero */
 
+/* #region Section2 Offerings */
 .section-offerings {
   padding-top: 113px;
   padding-bottom: 124px;
   background: #ffe550;
 }
+
 .section-offerings .container {
   display: flex;
   align-items: center;
@@ -140,32 +155,46 @@ body {
   font-size: 14px;
   line-height: 1.5;
 }
-.section-offerings-btn {
+.offerings-btn {
   border: 2px solid #7eb101;
   background-color: #fff;
+  padding: 10px 20px;
+  width: 106px;
+  height: 40px;
 }
 
+.offerings-btn:hover {
+  background: #bbf330;
+}
+/* #endregion Section2 Offerings */
+
+/* #region Section3 Favorites */
 .section-favorites {
   padding-top: 120px;
   padding-bottom: 101px;
 }
-.container {
-}
+
 .section-favorites-title {
   font-size: 42px;
   text-align: center;
 }
+
 .section-favorites-text {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .section-favorites-list {
   display: flex;
   flex-wrap: wrap;
   gap: 32px;
+  justify-content: center;
 }
+
 .section-favorites-list-item {
   width: calc((100% - 24px) 3);
 }
+
 .section-favorites-list-item-link {
 }
+/* #endregion Section3 Favorites */
